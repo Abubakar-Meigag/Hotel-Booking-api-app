@@ -7,9 +7,6 @@
     padding: 20px 0;
 }
 
-
-
-
 .input-div {
     margin-top: 20px;
     display: flex;
@@ -53,5 +50,17 @@ input {
     color: #3d405b;
     border: 2px solid #f2cc8f;
     background-color: #f4f1de;
+    cursor: pointer;
+}
+
+.delete-btn {
+    height: 25px;
+    width: 150px;
+    font-size: large;
+    font-weight: bold;
+    position: static;
+    background-color: #3d405b;
+    color: #f4f1de;
+    border: 1px solid #f2cc8f;
     cursor: pointer;
 }

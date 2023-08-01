@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import DeleteBooking from "./DeleteBooking";
 
 const DisplayBooking = () => {
   const [booking, setBooking] = useState([]);
@@ -19,11 +20,15 @@ const DisplayBooking = () => {
     fetchBookings();
   };
 
+  const onDeleteHandler = () => {
+    fetchBookings();
+  };
+
   return (
-    <div>
-      <button onClick={handleBooking}>Bookings</button>
+    <div className="booking-box">
+      <button onClick={handleBooking} className="booking-btn">Bookings</button>
       {booking.map((book, index) => (
-        <div className="booking-box" key={index}>
+        <div className="booking-details" key={index}>
           <ul key={book.id}>
             <li>{`ID: ${book.id}`}</li>
             <li>{`Title: ${book.title}`}</li>
@@ -34,6 +39,7 @@ const DisplayBooking = () => {
             <li>{`Check In: ${book.checkInDate}`}</li>
             <li>{`Check Out: ${book.checkOutDate}`}</li>
           </ul>
+          <DeleteBooking id={book.id} onDeleteHandler={onDeleteHandler} />
         </div>
       ))}
     </div>

@@ -1,4 +1,5 @@
 import './App.css';
+// import DeleteBooking from './hotel_booking_api/DeleteBooking';
 import DisplayBooking from './hotel_booking_api/DisplayBooking';
 import PostNewBooking from './hotel_booking_api/PostNewBooking';
 
