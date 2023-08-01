@@ -1,12 +1,18 @@
 .hotel-header {
     width: 100%;
     border: 2px solid #f2cc8f;
-    color: #e39219;
-    display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px 0;
     background: url(./img/Screen\ Shot\ 2023-08-01\ at\ 9.07.35\ pm.png);
+    display: flex;
+}
+h1{
+    background: #212121;
+    color: #f2cc8f;
+    font-size: 40px;
+    border-radius: 20px;
+    padding: 20px;
 }
 
 .input-div {
@@ -40,6 +46,7 @@ input {
     padding: 10px 10px;
     width: 370px;
     cursor: pointer;
+    font-size: 14px;
 }
 
 .send-div {
@@ -49,26 +56,12 @@ input {
     margin: 15px 0;
 }
 
-/* .send-btn {
-    height: 35px;
-    width: 118px;
-    font-size: x-large;
-    font-weight: bold;
-    margin-left: 140px;
-    color: #3d405b;
-    background-color: #f4f1de;
-    border: 2px solid #f2cc8f;
-    cursor: pointer;
-} */
-
-
 .find-display {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
 }
-
 
 .booking-details {
     width: 290px;
