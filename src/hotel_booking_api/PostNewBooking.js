@@ -50,74 +50,70 @@ const PostNewBooking = () => {
   const handleCheckOutDate = (e) => setCheckOutDate(e.target.value);
 
   return (
-    <div className="input-div">
+    <div className="input-item">
       <form>
         Title:
         <input
           type="text"
           value={title}
           onChange={handleTitle}
-          className="input-item"
+          className="title"
           placeholder="Title..."
         />
-        <br />
         First Name:
         <input
           type="text"
           value={firstName}
           onChange={handleFirstName}
-          className="input-item"
+          className="firstName"
           placeholder="First Name..."
         />
-        <br />
         Surname
         <input
           type="text"
           value={surname}
           onChange={handleSurname}
-          className="input-item"
+          className="surname"
           placeholder="Surname..."
-        />{" "}
-        <br />
+        />
         Email:
         <input
           type="email"
           value={email}
           onChange={handleEmail}
-          className="input-item"
+          className="email"
           placeholder="Email..."
-        />{" "}
-        <br />
+        />
         RoomId:
         <input
           type="number"
           value={roomId}
           onChange={handleRoomId}
-          className="input-item"
+          className="roomId"
           placeholder="Room ID..."
-        />{" "}
-        <br />
+        />
         Check In Date:
         <input
           type="date"
           value={checkInDate}
           onChange={handleCheckInDate}
-          className="input-item"
+          className="checkInDate"
           placeholder="Check In Date..."
         />
-        <br />
         Check Out Date:
         <input
           type="date"
           value={checkOutDate}
           onChange={handleCheckOutDate}
-          className="input-item"
+          className="checkInDate"
           placeholder="Check Out Date..."
         />
       </form>
-      <button onClick={newBooking} className="send-btn">
-        Send
-      </button>
+      <div className="send-div">
+        <button onClick={newBooking} className="send-btn">
+          Send
+        </button>
+      </div>
     </div>
   );
 };

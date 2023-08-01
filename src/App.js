@@ -5,10 +5,12 @@ import PostNewBooking from './hotel_booking_api/PostNewBooking';
 function App() {
   return (
     <div className="App">
-      <h1>Beko CYF Luxury Hotel</h1>
-      <br />
-      <PostNewBooking />
-      <br />
+      <div className="hotel-header">
+        <h1>Beko CYF Luxury Hotel</h1>
+      </div>
+      <div className="input-div">
+        <PostNewBooking />
+      </div>
       <DisplayBooking />
     </div>
   );

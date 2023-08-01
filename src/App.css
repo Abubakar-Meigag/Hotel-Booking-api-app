@@ -1,10 +1,57 @@
-.root{}
-
-body{}
-
-
-.input-div {
+.hotel-header {
+    width: 100%;
+    border: 2px solid #f2cc8f;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px 0;
+}
+
+
+
+
+.input-div {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    color: #3d405b;
+}
+
+.input-item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+
+input {
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #f2cc8f;
+    border-radius: 20px;
+    padding: 10px 10px;
+    width: 370px;
+}
+
+.send-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.send-btn {
+    height: 35px;
+    width: 88px;
+    font-size: x-large;
+    font-weight: bold;
+    margin-left: 140px;
+    color: #3d405b;
+    border: 2px solid #f2cc8f;
+    background-color: #f4f1de;
+    cursor: pointer;
 }
