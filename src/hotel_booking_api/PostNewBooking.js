@@ -51,7 +51,7 @@ const PostNewBooking = () => {
 
   return (
     <div className="input-div">
-      <from>
+      <form>
         Title:
         <input
           type="text"
@@ -114,7 +114,7 @@ const PostNewBooking = () => {
           className="input-item"
           placeholder="Check Out Date..."
         />
-      </from>
+      </form>
       <button onClick={newBooking} className="send-btn">
         Send
       </button>
