@@ -32,12 +32,12 @@ const FindBookingByID = () => {
       </form>
       <div className="getBookingByID">
         <button onClick={getBookingByID} className="id-btn">
-          Get Book By Id
+          <span class="box">Search</span>
         </button>
       </div>
-      <div className="find-details">
+      <div>
         {searchById.id && (
-          <div>
+          <div className="find-details">
             <h2>Booking Details</h2>
             <ul key={searchById.id}>
               <li>{`ID: ${searchById.id}`}</li>

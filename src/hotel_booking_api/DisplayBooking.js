@@ -26,26 +26,28 @@ const DisplayBooking = () => {
 
   return (
     <div className="booking-box">
+      <div className="btn">
+        <button onClick={handleBooking} className="booking-btn">
+          <span class="box">Bookings</span>
+        </button>
+      </div>
       {booking.map((book, index) => (
         <div className="booking-details" key={index}>
-          <ul key={book.id}>
-            <li>{`ID: ${book.id}`}</li>
-            <li>{`Title: ${book.title}`}</li>
-            <li>{`Firs Name: ${book.firstName}`}</li>
-            <li>{`Surname: ${book.surname}`}</li>
-            <li>{`Email: ${book.email}`}</li>
-            <li>{`Room ID: ${book.roomId}`}</li>
-            <li>{`Check In: ${book.checkInDate}`}</li>
-            <li>{`Check Out: ${book.checkOutDate}`}</li>
-          </ul>
-          <DeleteBooking id={book.id} onDeleteHandler={onDeleteHandler} />
+          <div className="card2">
+            <ul key={book.id}>
+              <li>{`ID: ${book.id}`}</li>
+              <li>{`Title: ${book.title}`}</li>
+              <li>{`Firs Name: ${book.firstName}`}</li>
+              <li>{`Surname: ${book.surname}`}</li>
+              <li>{`Email: ${book.email}`}</li>
+              <li>{`Room ID: ${book.roomId}`}</li>
+              <li>{`Check In: ${book.checkInDate}`}</li>
+              <li>{`Check Out: ${book.checkOutDate}`}</li>
+            </ul>
+            <DeleteBooking id={book.id} onDeleteHandler={onDeleteHandler} />
+          </div>
         </div>
       ))}
-      <div className="btn">
-      <button onClick={handleBooking} className="booking-btn">
-        Bookings
-      </button>
-      </div>
     </div>
   );
 };

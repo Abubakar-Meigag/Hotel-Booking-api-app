@@ -13,10 +13,14 @@ function App() {
       <div className="input-div">
         <PostNewBooking />
       </div>
-      <div>
-        <FindBookingByID />
+      <div className="find-display">
+        <div className="find-div">
+          <FindBookingByID />
+        </div>
+        <div className="display-div">
+          <DisplayBooking />
+        </div>
       </div>
-      <DisplayBooking />
     </div>
   );
 }

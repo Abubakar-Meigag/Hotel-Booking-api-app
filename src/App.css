@@ -1,25 +1,32 @@
 .hotel-header {
     width: 100%;
     border: 2px solid #f2cc8f;
+    color: #e39219;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 0;
+    padding: 10px 0;
+    background: url(./img/Screen\ Shot\ 2023-08-01\ at\ 9.07.35\ pm.png);
 }
 
 .input-div {
     margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-weight: bold;
-    color: #3d405b;
+    color: #f2cc8f;
 }
 
 .input-item {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+}
+
+body {
+    background-color: #1f1f1f;
 }
 
 
@@ -32,6 +39,7 @@ input {
     border-radius: 20px;
     padding: 10px 10px;
     width: 370px;
+    cursor: pointer;
 }
 
 .send-div {
@@ -41,26 +49,255 @@ input {
     margin: 15px 0;
 }
 
-.send-btn {
+/* .send-btn {
     height: 35px;
-    width: 88px;
+    width: 118px;
     font-size: x-large;
     font-weight: bold;
     margin-left: 140px;
     color: #3d405b;
-    border: 2px solid #f2cc8f;
     background-color: #f4f1de;
+    border: 2px solid #f2cc8f;
     cursor: pointer;
+} */
+
+
+.find-display {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+
+.booking-details {
+    width: 290px;
+    height: 254px;
+    background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+    border-radius: 20px;
+    transition: all .3s;
+}
+
+.card2 {
+    width: 290px;
+    height: 254px;
+    background-color: #1a1a1a;
+    border-radius: 0;
+    transition: all .2s;
+    color: #f2cc8f;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.card2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+}
+
+.booking-details:hover {
+    box-shadow: 0px 0px 80px 2px rgba(0, 255, 117, 0.30);
 }
 
 .delete-btn {
-    height: 25px;
-    width: 150px;
-    font-size: large;
+    width: 10em;
+    position: relative;
+    height: 3.5em;
+    border: 3px ridge #149CEA;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    transition: 1s;
+    border-radius: 0.3em;
+    font-size: 16px;
     font-weight: bold;
-    position: static;
+    
+}
+
+.delete-btn::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: #212121;
+    transition: 0.5s;
+    transform-origin: center;
+}
+
+.delete-btn::before {
+    content: "";
+    transform-origin: center;
+    position: absolute;
+    top: 80%;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: #212121;
+    transition: 0.5s;
+}
+
+.delete-btn:hover::before,
+.delete-btn:hover::after {
+    transform: scale(0)
+}
+
+.delete-btn:hover {
+    box-shadow: inset 0px 0px 25px #1479EA;
+}
+
+.box {
+    width: 140px;
+    height: auto;
+    float: left;
+    transition: .5s linear;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 15px;
+    text-align: center;
+    margin: 0 5px;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 900;
     background-color: #3d405b;
-    color: #f4f1de;
-    border: 1px solid #f2cc8f;
+    padding: 20px;
+}
+
+.box:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(100%);
+}
+
+.box:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-top: 4px solid transparent;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(-100%);
+}
+
+.box:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.box:hover:before {
+    border-color: #f2cc8f;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .3s;
+}
+
+.box:hover:after {
+    border-color: #f2cc8f;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .5s;
+}
+
+.booking-btn {
+    color: #f2cc8f;
+    font-size: 18px;
+    text-decoration: none;
     cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+    margin-bottom: 20px;
+}
+
+.id-btn {
+    color: #f2cc8f;
+    font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 190px;
+}
+
+.find-details {
+    width: 290px;
+    height: 304px;
+    border-radius: 30px;
+    background: #212121;
+    box-shadow: 15px 15px 30px rgb(25, 25, 25),
+        -15px -15px 30px rgb(60, 60, 60);
+    margin-bottom: 50px;
+    color: #f2cc8f;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.send-btn {
+    width: 140px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right, #77530a, #ffd277, #77530a, #77530a, #ffd277, #77530a);
+    background-size: 250%;
+    background-position: left;
+    color: #ffd277;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-duration: 1s;
+    overflow: hidden;
+}
+
+.send-btn::before {
+    position: absolute;
+    content: "SUBMIT";
+    font-weight: bolder;
+    font-size: 20px;
+    color: #ffd277;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 97%;
+    height: 90%;
+    border-radius: 8px;
+    transition-duration: 1s;
+    background-color: rgba(0, 0, 0, 0.842);
+    background-size: 200%;
+}
+
+.send-btn:hover {
+    background-position: right;
+    transition-duration: 1s;
+}
+
+.send-btn:hover::before {
+    background-position: right;
+    transition-duration: 1s;
+}
+
+.send-btn:active {
+    transform: scale(0.95);
 }

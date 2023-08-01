@@ -111,7 +111,7 @@ const PostNewBooking = () => {
       </form>
       <div className="send-div">
         <button onClick={newBooking} className="send-btn">
-          Send
+          Submit
         </button>
       </div>
     </div>
