@@ -26,7 +26,6 @@ const DisplayBooking = () => {
 
   return (
     <div className="booking-box">
-      <button onClick={handleBooking} className="booking-btn">Bookings</button>
       {booking.map((book, index) => (
         <div className="booking-details" key={index}>
           <ul key={book.id}>
@@ -42,6 +41,11 @@ const DisplayBooking = () => {
           <DeleteBooking id={book.id} onDeleteHandler={onDeleteHandler} />
         </div>
       ))}
+      <div className="btn">
+      <button onClick={handleBooking} className="booking-btn">
+        Bookings
+      </button>
+      </div>
     </div>
   );
 };

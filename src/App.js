@@ -1,9 +1,10 @@
-import './App.css';
-// import DeleteBooking from './hotel_booking_api/DeleteBooking';
-import DisplayBooking from './hotel_booking_api/DisplayBooking';
-import PostNewBooking from './hotel_booking_api/PostNewBooking';
+import "./App.css";
+import DisplayBooking from "./hotel_booking_api/DisplayBooking";
+import FindBookingByID from "./hotel_booking_api/FindBookingByID";
+import PostNewBooking from "./hotel_booking_api/PostNewBooking";
 
 function App() {
+
   return (
     <div className="App">
       <div className="hotel-header">
@@ -11,6 +12,9 @@ function App() {
       </div>
       <div className="input-div">
         <PostNewBooking />
+      </div>
+      <div>
+        <FindBookingByID />
       </div>
       <DisplayBooking />
     </div>
