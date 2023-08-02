@@ -64,7 +64,7 @@ input {
 }
 
 .booking-details {
-    width: 290px;
+    width: 350px;
     height: 254px;
     background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
     border-radius: 20px;
@@ -72,7 +72,7 @@ input {
 }
 
 .card2 {
-    width: 290px;
+    width: 350px;
     height: 254px;
     background-color: #1a1a1a;
     border-radius: 0;
@@ -102,7 +102,7 @@ input {
     border: 3px ridge #149CEA;
     outline: none;
     background-color: transparent;
-    color: white;
+    color: #f2cc8f;
     transition: 1s;
     border-radius: 0.3em;
     font-size: 16px;

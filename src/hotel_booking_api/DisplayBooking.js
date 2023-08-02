@@ -37,7 +37,7 @@ const DisplayBooking = () => {
             <ul key={book.id}>
               <li>{`ID: ${book.id}`}</li>
               <li>{`Title: ${book.title}`}</li>
-              <li>{`Firs Name: ${book.firstName}`}</li>
+              <li>{`First Name: ${book.firstName}`}</li>
               <li>{`Surname: ${book.surname}`}</li>
               <li>{`Email: ${book.email}`}</li>
               <li>{`Room ID: ${book.roomId}`}</li>
