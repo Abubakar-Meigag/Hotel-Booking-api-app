@@ -102,7 +102,7 @@ input {
     border: 3px ridge #149CEA;
     outline: none;
     background-color: transparent;
-    color: white;
+    color: #f2cc8f;
     transition: 1s;
     border-radius: 0.3em;
     font-size: 16px;
