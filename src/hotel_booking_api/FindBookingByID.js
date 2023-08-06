@@ -32,7 +32,7 @@ const FindBookingByID = () => {
       </form>
       <div className="getBookingByID">
         <button onClick={getBookingByID} className="id-btn">
-          <span class="box">Search</span>
+          <span className="box">Search</span>
         </button>
       </div>
       <div>

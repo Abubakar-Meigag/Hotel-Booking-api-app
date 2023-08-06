@@ -1,9 +1,12 @@
+import React from "react";
 import "./App.css";
 import DisplayBooking from "./hotel_booking_api/DisplayBooking";
 import FindBookingByID from "./hotel_booking_api/FindBookingByID";
 import PostNewBooking from "./hotel_booking_api/PostNewBooking";
 
 function App() {
+  // const [loading, setLoading] = useState(false);
+
 
   return (
     <div className="App">
